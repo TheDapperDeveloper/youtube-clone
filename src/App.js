@@ -1,15 +1,40 @@
+import "./App.css";
+import Header from "./components/Header";
+import Sidebar from "./components/Sidebar";
+import Explore from "./components/Explore";
+import Subscriptions from "./components/Subscriptions";
+import Library from "./components/Library";
+import History from "./components/History";
 
-import './App.css';
-import Header from './components/Header';
-import { MainContainer } from './styled-components/AppStyle';
+import { MainContainer } from "./styled-components/AppStyle";
 
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import { useState } from "react";
 
 function App() {
+  const [viewSidebar, setViewSidebar] = useState(true);
   return (
-    <MainContainer className="App">
-      <Header/>
-      
-    </MainContainer>
+    <Router>
+      <Switch>
+        <MainContainer className="App">
+          <Route exact path="https://www.youtube.com/"></Route>
+          <Header viewSidebar={viewSidebar} setViewSidebar={setViewSidebar} />
+          <Sidebar viewSidebar={viewSidebar} />
+          <Route>
+            <Explore />
+          </Route>
+          <Route>
+            <Subscriptions />
+          </Route>
+          <Route>
+            <Library />
+          </Route>
+          <Route>
+            <History />
+          </Route>
+        </MainContainer>
+      </Switch>
+    </Router>
   );
 }
 

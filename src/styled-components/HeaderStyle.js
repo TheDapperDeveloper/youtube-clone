@@ -12,7 +12,7 @@ export const HeaderContainer = styled.div`
   height: 75px;
 `;
 
-export const MenuButton = styled.img`
+export const MenuButton = styled.button`
   margin-right: 10px;
   margin-left: 10px;
   height: 20px;
