@@ -1,5 +1,5 @@
 const initialState = {
-    videos:"",
+    videos:[],
 }
 
 export const rootReducer = (state = initialState, action) => {

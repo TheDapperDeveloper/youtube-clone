@@ -1,6 +1,8 @@
-import React, { useEffect } from 'react'
+import React, { useEffect, useState } from 'react'
 
 import { useDispatch } from 'react-redux'
+import { useSelector } from 'react-redux'
+import { VideoContainer } from '../styled-components/VideoStyles'
 
 export default function Videos() {
     const URL = "https://www.googleapis.com/youtube/v3/videos"
@@ -27,10 +29,19 @@ export default function Videos() {
         };
         getData();
         return () => {};
-    }, []);
+    }, [] );
+    
+    const titles = useSelector((state) => state.videos[0].snippet.channelTitle)
+    // const channelTitle = useSelector((state) => state[0].snippet.channelTitle)
+    // const views = useSelector((state) => state[0].statistics.viewCount)
+    // const time = useSelector((state) => state[0].snippet.publishedAt)
+    console.log(titles)
     return (
-        <div>
+        <VideoContainer>
+            {titles}
             
-        </div>
+            
+            
+        </VideoContainer>
     )
 }
