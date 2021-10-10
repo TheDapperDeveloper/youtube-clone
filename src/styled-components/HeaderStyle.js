@@ -12,6 +12,26 @@ export const HeaderContainer = styled.div`
   height: 75px;
 `;
 
+export const LeftMenu = styled.div`
+display: flex;
+  justify-content: flex-start;
+  float: left;
+  
+`;
+
+export const CenterMenu = styled.div`
+  display: flex;
+  margin-left: 400px;
+ 
+`;
+
+export const RightMenu = styled.div`
+  display: flex;
+  justify-content: flex-end;
+  width: 350px;
+ 
+`;
+
 export const MenuButton = styled.button`
   margin-right: 10px;
   margin-left: 10px;
@@ -27,8 +47,7 @@ export const SearchBox = styled.input`
   width: 500px;
   border: 1px solid;
   border-color: #303030;
-  `
-
+`;
 
 export const SearchButton = styled.img`
   margin-right: 10px;
@@ -36,11 +55,10 @@ export const SearchButton = styled.img`
 `;
 
 export const Microphone = styled.img`
-    height: 35px;
+  height: 35px;
   margin-right: 10px;
   margin-left: 10px;
 `;
-
 
 export const AppMenu = styled.img`
   height: 35px;
@@ -63,5 +81,4 @@ export const SignIn = styled.button`
   border: 2px solid #3da1f6;
   border-radius: 2px;
   width: 100px;
-
-`
+`;
