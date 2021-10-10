@@ -10,6 +10,7 @@ import { MainContainer } from "./styled-components/AppStyle";
 
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import { useState } from "react";
+import Videos from "./components/Videos";
 
 function App() {
   const [viewSidebar, setViewSidebar] = useState(true);
@@ -32,6 +33,7 @@ function App() {
           <Route>
             <History />
           </Route>
+          <Videos />
         </MainContainer>
       </Switch>
     </Router>
