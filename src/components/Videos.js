@@ -29,17 +29,21 @@ export default function Videos() {
       console.log(jsonData);
       dispatch({
         type: "GET_VIDEOS",
-        payload: [...jsonData],
+        payload: jsonData,
       });
     };
     getData();
     return () => {};
   }, []);
 
-  const videos = useSelector((state) => state.items);
+  const videos = useSelector((state) => state.videos.items);
+  console.log(videos);
+  const images = useSelector((state) => state.videos.items.snippet.thumbnails);
+  console.log(images);
 
   return (
     <VideoContainer>
+      <img src="" alt="" />
       {videos.map((video) => (
         <h3>{video.snippet.title}</h3>
       ))}

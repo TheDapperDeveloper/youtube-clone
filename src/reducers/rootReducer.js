@@ -1,9 +1,11 @@
-const initialState = [];
+const initialState = {
+  videos: [],
+};
 
 export const rootReducer = (state = initialState, action) => {
   switch (action.type) {
     case "GET_VIDEOS":
-      return { ...action.payload };
+      return { ...state, videos: action.payload };
 
     default:
       return state;
