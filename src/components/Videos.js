@@ -26,7 +26,7 @@ export default function Videos() {
         }
       );
       const jsonData = await getTheVideos.json();
-      console.log(jsonData);
+
       dispatch({
         type: "GET_VIDEOS",
         payload: jsonData,
@@ -37,20 +37,23 @@ export default function Videos() {
   }, []);
 
   const videos = useSelector((state) => state.videos.items);
-  console.log(videos);
-  // const images = useSelector(
-  //   (state) => state.videos.items.snippet[9].default.url
-  // );
-  // console.log(images);
 
   return (
     <VideoContainer>
       {videos.map((video) => (
         <img src={video.snippet.thumbnails.medium.url} alt="" />
       ))}
-      <img src="" alt="" />
+
       {videos.map((video) => (
         <h3>{video.snippet.title}</h3>
+      ))}
+
+      {videos.map((video) => (
+        <p>{video.snippet.channelTitle}</p>
+      ))}
+
+      {videos.map((video) => (
+        <p>{video.statistics.viewCount}</p>
       ))}
     </VideoContainer>
   );
