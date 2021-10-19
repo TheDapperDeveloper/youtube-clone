@@ -7,7 +7,7 @@ export const VideoContainer = styled.div`
   flex-wrap: wrap;
 `;
 
-export const EachVideo = styled.div`
+export const EachVideoStyle = styled.div`
   flex-direction: row;
   color: white;
 `;
