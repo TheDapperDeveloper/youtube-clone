@@ -38,11 +38,16 @@ export default function Videos() {
 
   const videos = useSelector((state) => state.videos.items);
   console.log(videos);
-  const images = useSelector((state) => state.videos.items.snippet.thumbnails);
-  console.log(images);
+  // const images = useSelector(
+  //   (state) => state.videos.items.snippet[9].default.url
+  // );
+  // console.log(images);
 
   return (
     <VideoContainer>
+      {videos.map((video) => (
+        <img src={video.snippet.thumbnails.medium.url} alt="" />
+      ))}
       <img src="" alt="" />
       {videos.map((video) => (
         <h3>{video.snippet.title}</h3>
