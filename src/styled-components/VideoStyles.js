@@ -4,17 +4,16 @@ export const VideoContainer = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-  flex-wrap: wrap;
 `;
 
 export const EachVideoStyle = styled.div`
+  display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   color: white;
+  margin: 20px;
+  text-align: center;
+  color: white;
+  gap: 10px;
+  font-family: "Noto Sans Display", sans-serif;
 `;
-
-// export const VideoContainer = styled.div`
-//   display: grid;
-//   grid-template-columns: repeat (4, 3fr);
-//   grid-template-rows: repeat(3, 3fr);
-//   gap: 10px;
-// `;

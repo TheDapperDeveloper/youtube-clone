@@ -2,7 +2,10 @@ import React, { useEffect, useState } from "react";
 
 import { useDispatch } from "react-redux";
 import { useSelector } from "react-redux";
-import { VideoContainer } from "../styled-components/VideoStyles";
+import {
+  EachVideoStyle,
+  VideoContainer,
+} from "../styled-components/VideoStyles";
 
 import EachVideo from "./EachVideo";
 
@@ -43,9 +46,11 @@ export default function Videos() {
 
   return (
     <VideoContainer>
-      {videos?.map((video) => (
-        <EachVideo videos={video} />
-      ))}
+      <EachVideoStyle>
+        {videos?.map((video) => (
+          <EachVideo videos={video} />
+        ))}
+      </EachVideoStyle>
     </VideoContainer>
   );
 }
