@@ -31,6 +31,7 @@ export default function Videos() {
         }
       );
       const jsonData = await getTheVideos.json();
+      console.log(jsonData);
 
       dispatch({
         type: "GET_VIDEOS",

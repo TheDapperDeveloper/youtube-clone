@@ -7,7 +7,7 @@ export const SidebarContainer = styled.div`
   background-color: #202020;
   list-style: none;
   height: 200vh;
-  width: 70%;
+  width: 100%;
 `;
 
 export const SidebarLink = styled(Link)`
