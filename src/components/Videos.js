@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 
 import { useDispatch } from "react-redux";
 import { useSelector } from "react-redux";
-import { VideoContainer } from "../styled-components/VideoStyles";
+import { EachVideo, VideoContainer } from "../styled-components/VideoStyles";
 
 export default function Videos() {
   const URL = "https://www.googleapis.com/youtube/v3/videos";
@@ -40,21 +40,23 @@ export default function Videos() {
 
   return (
     <VideoContainer>
-      {videos.map((video) => (
-        <img src={video.snippet.thumbnails.medium.url} alt="" />
-      ))}
+      <EachVideo>
+        {videos.map((video) => (
+          <img src={video.snippet.thumbnails.medium.url} alt="" />
+        ))}
 
-      {videos.map((video) => (
-        <h3>{video.snippet.title}</h3>
-      ))}
+        {videos.map((video) => (
+          <h3>{video.snippet.title}</h3>
+        ))}
 
-      {videos.map((video) => (
-        <p>{video.snippet.channelTitle}</p>
-      ))}
+        {videos.map((video) => (
+          <p>{video.snippet.channelTitle}</p>
+        ))}
 
-      {videos.map((video) => (
-        <p>{video.statistics.viewCount}</p>
-      ))}
+        {videos.map((video) => (
+          <p>{video.statistics.viewCount}</p>
+        ))}
+      </EachVideo>
     </VideoContainer>
   );
 }

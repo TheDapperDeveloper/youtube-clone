@@ -2,10 +2,13 @@ import styled from "styled-components";
 
 export const VideoContainer = styled.div`
   display: flex;
-  flex-direction: row;
   align-items: center;
+  justify-content: center;
   flex-wrap: wrap;
-  gap: 10px;
+`;
+
+export const EachVideo = styled.div`
+  flex-direction: row;
   color: white;
 `;
 
