@@ -8,9 +8,11 @@ export const SidebarContainer = styled.div`
   list-style: none;
   height: 80%;
   width: 150px;
-  position: sticky;
+  position: fixed;
   z-index: 1;
   top: 0;
+  margin-top: 50px;
+  margin-right: 500rem;
   left: 0;
   padding-top: 20px;
 `;

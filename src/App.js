@@ -21,6 +21,7 @@ function App() {
           <Route exact path="https://www.youtube.com/"></Route>
           <Header viewSidebar={viewSidebar} setViewSidebar={setViewSidebar} />
           <Sidebar viewSidebar={viewSidebar} />
+          <Videos />
           <Route>
             <Explore />
           </Route>
@@ -33,7 +34,6 @@ function App() {
           <Route>
             <History />
           </Route>
-          <Videos />
         </MainContainer>
       </Switch>
     </Router>

@@ -7,7 +7,7 @@ export const HeaderContainer = styled.div`
   grid-area: header;
   position: sticky;
   top: 0;
-  z-index: 1;
+  z-index: 2;
   display: flex;
   flex-direction: row;
   font-family: "Noto Sans Display", sans-serif;

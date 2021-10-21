@@ -32,9 +32,11 @@ export default function Header(props) {
   return (
     <HeaderContainer>
       <LeftMenu>
-        <MenuButton onClick={() => setViewSidebar(!viewSidebar)}>
-          {viewSidebar ? "menubutton.png" : "menubutton.png"}
-        </MenuButton>
+        <img
+          src={menu}
+          alt=""
+          onClick={() => setViewSidebar(!viewSidebar)}
+        ></img>
         <img src={youtube} alt="" />
         <Title>YouTube</Title>
       </LeftMenu>

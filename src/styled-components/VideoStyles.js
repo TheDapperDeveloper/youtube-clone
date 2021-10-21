@@ -4,6 +4,7 @@ export const VideoContainer = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-left: 10rem;
 `;
 
 export const EachVideoStyle = styled.div`
