@@ -5,21 +5,9 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  height: 100%;
-  overflow: hidden; /* makes the body non-scrollable (we will add scrolling to the sidebar and main content containers) */
-  margin: 0px; /* removes default style */
-  display: flex; /* enables flex content for its children */
-  box-sizing: border-box;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
-}
-body {
-  height: 100%;
-  overflow: hidden; /* makes the body non-scrollable (we will add scrolling to the sidebar and main content containers) */
-  margin: 0px; /* removes default style */
-  display: flex; /* enables flex content for its children */
-  box-sizing: border-box;
 }
