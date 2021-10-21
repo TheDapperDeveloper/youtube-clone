@@ -5,6 +5,9 @@ export const HeaderContainer = styled.div`
   align-items: center;
   background-color: #202020;
   grid-area: header;
+  position: sticky;
+  top: 0;
+  z-index: 1;
   display: flex;
   flex-direction: row;
   font-family: "Noto Sans Display", sans-serif;
