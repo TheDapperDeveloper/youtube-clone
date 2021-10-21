@@ -13,23 +13,20 @@ export const HeaderContainer = styled.div`
 `;
 
 export const LeftMenu = styled.div`
-display: flex;
+  display: flex;
   justify-content: flex-start;
   float: left;
-  
 `;
 
 export const CenterMenu = styled.div`
   display: flex;
   margin-left: 400px;
- 
 `;
 
 export const RightMenu = styled.div`
   display: flex;
   justify-content: flex-end;
   width: 350px;
- 
 `;
 
 export const MenuButton = styled.button`
@@ -58,18 +55,27 @@ export const Microphone = styled.img`
   height: 35px;
   margin-right: 10px;
   margin-left: 10px;
+  &:hover {
+    transform: scale(1.2);
+  }
 `;
 
 export const AppMenu = styled.img`
   height: 35px;
   margin-right: 10px;
   margin-left: 10px;
+  &:hover {
+    transform: scale(1.2);
+  }
 `;
 
 export const SettingsMenu = styled.img`
   height: 35px;
   margin-right: 10px;
   margin-left: 10px;
+  &:hover {
+    transform: scale(1.2);
+  }
 `;
 
 export const SignIn = styled.button`
@@ -81,4 +87,11 @@ export const SignIn = styled.button`
   border: 2px solid #3da1f6;
   border-radius: 2px;
   width: 100px;
+  &:hover {
+    transform: scale(1.2);
+  }
+`;
+
+export const Title = styled.h1`
+  margin-left: 10px;
 `;

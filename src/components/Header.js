@@ -11,6 +11,7 @@ import {
   SearchButton,
   SettingsMenu,
   SignIn,
+  Title,
 } from "../styled-components/HeaderStyle";
 
 //images
@@ -35,12 +36,12 @@ export default function Header(props) {
           {viewSidebar ? "menubutton.png" : "menubutton.png"}
         </MenuButton>
         <img src={youtube} alt="" />
-        <h1>YouTube</h1>
+        <Title>YouTube</Title>
       </LeftMenu>
       <CenterMenu>
-      <SearchBox type="text" placeholder="Search" />
-      <SearchButton src={search} alt="" />
-      <Microphone src={microphone} alt="" />
+        <SearchBox type="text" placeholder="Search" />
+        <SearchButton src={search} alt="" />
+        <Microphone src={microphone} alt="" />
       </CenterMenu>
       <RightMenu>
         <AppMenu src={apps} alt="" />
