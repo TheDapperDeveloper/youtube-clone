@@ -4,6 +4,7 @@ export const HeaderContainer = styled.div`
   display: flex;
   align-items: center;
   background-color: #202020;
+  justify-content: center;
   grid-area: header;
   position: sticky;
   top: 0;
@@ -13,6 +14,17 @@ export const HeaderContainer = styled.div`
   font-family: "Noto Sans Display", sans-serif;
   color: white;
   height: 75px;
+  @media only screen and (device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3) {
+    display: flex;
+    align-items: center;
+    background-color: #202020;
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+    font-family: "Noto Sans Display", sans-serif;
+    color: white;
+    height: 75px;
+  }
 `;
 
 export const LeftMenu = styled.div`
@@ -32,14 +44,17 @@ export const RightMenu = styled.div`
   width: 350px;
 `;
 
-export const MenuButton = styled.button`
-  margin-right: 10px;
-  margin-left: 10px;
-  height: 20px;
+export const MenuButton = styled.img`
+  margin-right: 175px;
+  margin-left: 5px;
+  margin-top: 15px;
+  height: 40px;
+  &:hover {
+    transform: scale(1.2);
+  }
 `;
 
 export const SearchBox = styled.input`
-  margin-left: 10px;
   height: 35px;
   background-color: #121212;
   color: white;

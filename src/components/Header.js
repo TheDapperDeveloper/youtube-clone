@@ -32,11 +32,11 @@ export default function Header(props) {
   return (
     <HeaderContainer>
       <LeftMenu>
-        <img
+        <MenuButton
           src={menu}
           alt=""
           onClick={() => setViewSidebar(!viewSidebar)}
-        ></img>
+        ></MenuButton>
         <img src={youtube} alt="" />
         <Title>YouTube</Title>
       </LeftMenu>

@@ -12,9 +12,14 @@ export const SidebarContainer = styled.div`
   z-index: 1;
   top: 0;
   margin-top: 50px;
-  margin-right: 500rem;
   left: 0;
   padding-top: 20px;
+  @media only screen and (device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3) {
+    display: flex;
+    flex-direction: column;
+    background-color: #202020;
+    list-style: none;
+  }
 `;
 
 export const SidebarLink = styled(Link)`
