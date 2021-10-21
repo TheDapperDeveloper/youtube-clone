@@ -6,8 +6,13 @@ export const SidebarContainer = styled.div`
   grid-area: sidebar;
   background-color: #202020;
   list-style: none;
-  height: 200vh;
-  width: 100%;
+  height: 80%;
+  width: 150px;
+  position: sticky;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  padding-top: 20px;
 `;
 
 export const SidebarLink = styled(Link)`
