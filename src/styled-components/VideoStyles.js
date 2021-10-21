@@ -14,6 +14,12 @@ export const EachVideoStyle = styled.div`
   margin: 20px;
   text-align: center;
   color: white;
-  gap: 10px;
+  gap: 20px;
   font-family: "Noto Sans Display", sans-serif;
+`;
+
+export const VideoAutomation = styled.img`
+  &:hover {
+    transform: scale(1.1);
+  }
 `;
