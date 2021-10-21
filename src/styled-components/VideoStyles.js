@@ -7,9 +7,9 @@ export const VideoContainer = styled.div`
 `;
 
 export const EachVideoStyle = styled.div`
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-rows: repeat(3, 325px);
+  grid-template-columns: repeat(4, 320px);
   color: white;
   margin: 20px;
   text-align: center;
